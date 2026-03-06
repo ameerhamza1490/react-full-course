@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import Cards from "./Components/Cards";
 
 const App = () => {
   return (
-    <div>
-      <h1>First Program</h1>
+    <div className="parent">
+      <Cards />
     </div>
   );
 };
