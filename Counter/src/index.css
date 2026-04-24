@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  width: fit-content;
+  background-color: black;
+  color: white;
+  padding: 40px 70px;
+  font-size: 14rem;
+}
+
+button{
+  padding: 25px 40px;
+  margin-right: 32px; 
+  margin-top: 15px;
+  font-size: large;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
