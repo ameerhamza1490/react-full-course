@@ -77,13 +77,13 @@ const App = () => {
             {task.map((elem, indx) => (
               <div
                 key={indx}
-                className="flex flex-col items-start justify-between h-60 bg-cover rounded-xl text-black pt-16 sm:pt-9 md:pt-9 px-6.5 sm:px-4 md:px-4 bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')]"
+                className="flex flex-col items-start justify-between h-60 bg-cover rounded-xl text-black pt-9 sm:pt-9 md:pt-9 px-4 sm:px-4 md:px-4 bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')]"
               >
                 <div>
                   <h1 className="font-bold uppercase underline">
                     {elem.title}
                   </h1>
-                  <p>{elem.details}</p>
+                  <p className="leading-tight">{elem.details}</p>
                 </div>
 
                 <button
