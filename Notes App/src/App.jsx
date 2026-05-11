@@ -89,7 +89,7 @@ const App = () => {
                 <button
                   className="w-full bg-red-700 text-white py-2 mb-2 rounded cursor-pointer hover:bg-red-900 active:scale-95"
                   onClick={() => {
-                    deleteBtn(ind);
+                    deleteBtn(indx);
                   }}
                 >
                   Delete
