@@ -27,7 +27,7 @@ const App = () => {
   };
 
   return (
-    <div className=" bg-black text-white">
+    <div className=" bg-black text-white h-full">
       <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col">
         <div
           className="w-full border-r-2 h-screen pt-20 px-10 flex
@@ -71,9 +71,9 @@ const App = () => {
           </form>
         </div>
 
-        <div className="lg:w-10/10 -mt-40 lg:mt-0 md:-mt-40 sm:-mt-40 lg:pt-20 px-10">
+        <div className="lg:w-10/10 pt-10 lg:pt-20 px-10 ">
           <h1 className="text-4xl font-bold">Recent Notes</h1>
-          <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-5 sm:grid-cols-4  items-start justify-start gap-5 mt-6 h-[90%] overflow-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-5 sm:grid-cols-4  items-start justify-start gap-5 mt-6 h-auto ">
             {task.map((elem, indx) => (
               <div
                 key={indx}
