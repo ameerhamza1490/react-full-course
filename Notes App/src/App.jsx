@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 const App = () => {
   const [title, setTitle] = useState("");
   const [details, setDetails] = useState("");
   const [task, setTask] = useState([]);
+
+  useEffect(() => {
+    const savedNotes = localStorage.getItem("notes");
+    if (savedNotes) {
+      setTask(JSON.parse(savedNotes));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("notes", JSON.stringify(task));
+  }, [task]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -11,6 +22,7 @@ const App = () => {
     if (!title.trim() || !details.trim()) {
       return;
     }
+
     const newTask = [...task];
     newTask.push({ title, details });
     setTask(newTask);
