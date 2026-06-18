@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.light{
+  background-color: seagreen;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.dark{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  color: white;
+}
+.nav2{
+  display: flex;
+  gap: 20px;
+}
+
+button{
+  padding: 10px 20px;
+  background-color: palegreen;
+  outline: none;
+  border: none;
+  color: black; 
+  margin-top: 10px; 
+  cursor: pointer;
+}
+
+button:active{
+  transform: scale(1.1);
+}
